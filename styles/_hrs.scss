@@ -1,0 +1,19 @@
+hr {
+  &.smallest {
+    height: 1px;
+    margin-bottom: $margin-small;
+  }
+
+  &.small {
+    height: 1.5px;
+    margin-bottom: $margin-small;
+  }
+
+  &.big {
+    height: 5px;
+  }
+
+  &.biggest {
+    height: 10px;
+  }
+}

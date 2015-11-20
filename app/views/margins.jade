@@ -1,0 +1,15 @@
+- margins = ['margin-smallest', 'margin-small', 'margin', 'margin-big', 'margin-biggest']
+
+a.anchor(name="margins")
+
+h1 <strike>Margins</strike>
+
+hr
+
+ul.examples.margins
+  - for margin in margins
+    li
+      label <strike>$#{margin}</strike>
+
+      .example
+        .filler.primary-color(class=margin)

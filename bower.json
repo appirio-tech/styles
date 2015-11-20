@@ -1,0 +1,21 @@
+{
+  "name": "Style Guide",
+  "version": "0.0.1",
+  "description": "Appiro",
+  "authors": [
+    ""
+  ],
+  "license": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+  },
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}

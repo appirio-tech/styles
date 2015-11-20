@@ -1,0 +1,35 @@
+@import "work-includes";
+
+ul.margins {
+  text-decoration: line-through;
+
+  .example {
+    border: 1px dashed $primary-color;
+
+    .filler {
+      min-height: 50px;
+      min-width: 50px;
+      background-color: $primary-color;
+
+      &.margin {
+        margin: $margin;
+      }
+
+      &.margin-big {
+        margin: $margin-big;
+      }
+
+      &.margin-biggest {
+        margin: $margin-biggest;
+      }
+
+      &.margin-small {
+        margin: $margin-small;
+      }
+
+      &.margin-smallest {
+        margin: $margin-smallest;
+      }
+    }
+  }
+}

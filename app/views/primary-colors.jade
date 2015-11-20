@@ -1,0 +1,14 @@
+- primaryColors = ['primary-color', 'primary-color-light', 'primary-color-dark', 'success-color', 'danger-color', 'danger-color-light', 'danger-color-lightest', 'white', 'black']
+
+a.anchor(name="primary-colors")
+
+h1 Primary Colors
+
+hr
+
+ul.examples.colors
+  - for color in primaryColors
+    li
+      label $#{color}
+
+      .example(class=color)

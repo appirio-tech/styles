@@ -1,0 +1,64 @@
+@mixin font-line($pt) {
+  font-size     : $pt;
+  padding-bottom: $pt * 0.20; /* due to font extending out */
+}
+
+@mixin vertical-align-middle() {
+  > * {
+    display       : inline-block;
+    vertical-align: middle;
+  }
+}
+
+@mixin bg-image-ratio($low, $high) {
+  background-repeat: no-repeat;
+
+  @media (-webkit-max-device-pixel-ratio: 1.99), (max-resolution: 191dpi) {
+    background-image: url($low);
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url($high);
+  }
+}
+
+@mixin bg-cover($src) {
+  background             : url($src) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size   : cover;
+  -o-background-size     : cover;
+  background-size        : cover;
+}
+
+@mixin flex-center($justify-content: flex-start, $margin: '') {
+  @include display(flex);
+  @include justify-content($justify-content);
+  @include align-items(center);
+  @include flex-wrap(wrap);
+
+  @if $margin != '' {
+    > * {
+      margin-bottom: $margin;
+      margin-right: $margin
+    }
+  }
+}
+
+@mixin block-center() {
+  display     : block;
+  margin-left : auto;
+  margin-right: auto;
+}
+
+@mixin elevated() {
+  box-shadow: 0 0px 6px 0px $neutral-color-dark;
+}
+
+@mixin exclude-first($property: margin-top, $value: 10px, $first-value: 0px) {
+  #{$property}: $value;
+
+  &:first-child {
+    #{$property}: $first-value;
+  }
+}
+

@@ -1,0 +1,21 @@
+{
+  "name": "appirio-work-styles",
+  "main": "index.js",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/appirio-tech/work-styles.git"
+  },
+  "bugs": {
+    "url": "https://github.com/appirio-tech/work-styles/issues"
+  },
+  "homepage": "https://github.com/appirio-tech/work-styles",
+  "devDependencies": {
+    "appirio-gulp-tasks": "3.x.x",
+    "gulp": "^3.8.11",
+    "npm-prepublish": "^1.2.1"
+  },
+  "dependencies": {
+    "node-neat": "~1.7.1-beta1"
+  }
+}

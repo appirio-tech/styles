@@ -1,0 +1,31 @@
+.dark-bg {
+  background-color: $neutral-color-lightest;
+
+  h1, h2, h3, h4, h5, h6, p  {
+    color: $text-color;
+
+    &.danger {
+      color: $danger-color;
+    }
+  }
+
+  hr {
+    background-color: $neutral-color-light;
+  }
+}
+
+.light-bg {
+  background-color: $white;
+
+  h1, h2, h3, h4, h5, h6, p  {
+    color: $text-color-light;
+
+    &.danger {
+      color: $danger-color;
+    }
+  }
+
+  hr {
+    background-color: $neutral-color-lightest;
+  }
+}

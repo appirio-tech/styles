@@ -1,0 +1,66 @@
+- var css = ['main', 'spacing', 'padding', 'margins', 'colors', 'font-sizes', 'font-weights', 'line-heights', 'border-radiuses', 'icons', 'misc', 'buttons']
+
+- var navs = ['primary-colors', 'neutral-colors', 'text-colors', 'buttons', 'paddings', 'margins', 'spacing', 'border-radiuses', 'form-elements', 'typography', 'font-sizes', 'font-weights', 'line-heights', 'loader', 'icons', 'lists', 'hrs', 'misc', 'mixins']
+
+html(ng-app='timeline')
+  head
+    title Work Styles
+
+    meta(charset='utf-8')
+
+    meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no')
+
+    = "\n"
+    // build:css styles/app.css
+    = "\n"
+    each path in css
+      link(href='/styles/' + path + ".css", rel="stylesheet")
+      = "\n"
+    // endbuild
+    = "\n"
+
+    script(src="//use.typekit.net/jjo6pal.js")
+
+    script.
+      try{Typekit.load({ async: true });}catch(e){}
+
+  body
+    ul.nav(role="navigation")
+      each nav in navs
+        - var spaces = nav.replace('-', ' ')
+        li
+          a(href="##{nav}") #{spaces}
+
+
+    main
+      include views/primary-colors
+
+      include views/neutral-colors
+
+      include views/text-colors
+
+      include views/buttons
+
+      include views/padding
+
+      include views/margins
+
+      include views/spacing
+
+      include views/border-radiuses
+
+      include views/form
+
+      include views/typography
+
+      include views/icons
+
+      include views/lists
+
+      include views/hrs
+
+      include views/misc
+
+      include views/mixins

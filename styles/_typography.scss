@@ -1,0 +1,72 @@
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  color         : $text-color-light;
+  font-weight   : $font-weight-lightest;
+  font-family   : "sofia-pro";
+}
+
+h1 {
+  @include font-line(36px);
+}
+
+h2 {
+  @include font-line(32px);
+}
+
+h3 {
+  @include font-line(26px);
+}
+
+h4 {
+  @include font-line(24px);
+}
+
+h5 {
+  @include font-line(20px);
+
+  color: #706e6e;
+}
+
+h6 {
+  @include font-line(18px);
+
+  color: #545454;
+}
+
+time {
+  color: $neutral-color-dark;
+}
+
+label {
+  font-weight: $font-weight-bold;
+  text-transform: capitalize;
+}
+
+p {
+  font-size  : $font-size;
+  font-weight: $font-weight-light;
+  line-height: $line-height;
+
+  &.secondary {
+    color: $text-color-lightest;
+  }
+
+  &.error {
+    font-size  : $font-size-small;
+    line-height: $line-height-small;
+    color      : $danger-color;
+    font-style : italic;
+  }
+
+  &.wide {
+    width: 250px;
+  }
+
+  &.wider {
+    width: 500px;
+  }
+}
+
+strong {
+  font-weight: $font-weight-bold;
+}

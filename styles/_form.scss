@@ -1,0 +1,41 @@
+input[type="text"], input[type="password"], input[type="email"], input[type="number"], input[type="url"] {
+  font-family  : "source-sans-pro";
+  display      : block;
+  padding      : 10px 15px;
+  border       : 1px solid $neutral-color-light;
+  color        : $black;
+  border-radius: 4px;
+  font-size    : $font-size-small;
+  font-weight  : $font-weight;
+  width        : 180px;
+
+  &.error {
+    border-left: 3px solid $danger-color;
+  }
+}
+
+textarea {
+  font-family  : "source-sans-pro";
+  display      : block;
+  height       : 75px;
+  color        : $black;
+  border       : 1px solid $neutral-color-light;
+  border-radius: 4px;
+  padding      : $padding-small;
+  font-size    : $font-size-small;
+  font-weight  : $font-weight-light;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="number"], input[type="url"], textarea, select {
+  &.wide {
+    width: 250px;
+  }
+
+  &.wider {
+    width: 500px;
+  }
+
+  &.widest {
+    width: 100%;
+  }
+}

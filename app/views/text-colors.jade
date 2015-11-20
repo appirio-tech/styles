@@ -1,0 +1,14 @@
+- textColors = ['text-color-lightest', 'text-color-light', 'text-color', 'text-color-dark', 'text-color-darkest', ]
+
+a.anchor(name="text-colors")
+
+h1 Text Colors
+
+hr
+
+ul.examples.colors
+  - for color in textColors
+    li
+      label $#{color}
+
+      .example(class=color)

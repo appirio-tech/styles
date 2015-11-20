@@ -1,0 +1,190 @@
+// disable border-box-sizing in bourbon-neat
+$border-box-sizing: false;
+
+//*** deprecated
+$spacing         : 14px;
+$spacing-big     : 18px;
+$spacing-biggest : 24px;
+$spacing-small   : 10px;
+$spacing-smallest: 6px;
+
+$spacing         : 14px;
+$spacing-big     : 18px;
+$spacing-biggest : 24px;
+$spacing-small   : 10px;
+$spacing-smallest: 6px;
+
+$padding         : 16px;
+$padding-big     : 32px;
+$padding-biggest : 64px;
+$padding-small   : 8px;
+$padding-smallest: 4px;
+
+$margin         : 32px;
+$margin-big     : 64px;
+$margin-biggest : 128px;
+$margin-small   : 16px;
+$margin-smallest: 8px;
+
+$font-size-smallest: 12px;
+$font-size-small   : 14px;
+$font-size         : 15px;
+$font-size-big     : 16px;
+$font-size-biggest : 18px;
+
+$line-height-smallest: 15px;
+$line-height-small   : 18px;
+$line-height         : 19px;
+$line-height-big     : 20px;
+$line-height-biggest : 23px;
+
+$border-radius         : 6px;
+$border-radius-big     : 8px;
+$border-radius-biggest : 10px;
+$border-radius-small   : 4px;
+$border-radius-smallest: 2px;
+
+$black: #3e3e3e;
+$white: #fff;
+
+$primary-color        : #00aeff;
+$primary-color-light  : #ddf2fd;
+$primary-color-dark   : #0096ff;
+$success-color        : #99cc00;
+$danger-color         : #ff0066;
+$danger-color-light   : #ed7878;
+$danger-color-lightest: #ffcce1;
+
+$neutral-color         : #d7d5d5;
+$neutral-color-dark    : #c3c1c1;
+$neutral-color-darkest : #8c8b8b;
+$neutral-color-light   : #e6e6e6;
+$neutral-color-lightest: #f2f2f2;
+
+$text-color-lightest: #979797;
+$text-color-light   : #706e6e;
+$text-color         : #4a4a4a;
+$text-color-dark    : #111;
+$text-color-darkest : #000;
+
+$font-weight         : 400;
+$font-weight-light   : 300;
+$font-weight-lightest: 200;
+$font-weight-bold    : 500;
+$font-weight-boldest : 700;
+
+//*** deprecated end
+
+$primary-color-base   : #00aeff !default;
+$primary-color-darker : $black;
+$primary-color-dark   : #0096ff;
+$primary-color        : #00aeff;
+$primary-color-light  : #ddf2fd;
+$primary-color-lighter: $white;
+
+$success-color-base   : #000 !default;
+$success-color-darker : $black;
+$success-color-dark   : $black;
+$success-color        : #99cc00;
+$success-color-light  : $white;
+$success-color-lighter: $white;
+
+$warning-color-base   : #000 !default;
+$warning-color-darker : lighten($warning-color-base, 13.5%);
+$warning-color-dark   : lighten($warning-color-base, 20%);
+$warning-color        : lighten($warning-color-base, 33.5%);
+$warning-color-light  : lighten($warning-color-base, 46.7%);
+$warning-color-lighter: lighten($warning-color-base, 93.5%);
+
+$danger-color-base   : #ff0066 !default;
+$danger-color-darker : $black;
+$danger-color-dark   : $black;
+$danger-color        : #ff0066;
+$danger-color-light  : #ed7878;
+$danger-color-lighter: #ffcce1;
+
+
+$gray-base   : #d7d5d5 !default;
+$gray-darkest: $black;
+$gray-darker : #8c8b8b;
+$gray-dark   : #c3c1c1;
+$gray        : $gray-base;
+$gray-light  : #e6e6e6;
+$gray-lighter: #f2f2f2;
+$gray-lightest: $white;
+
+$white: #fff;
+$black: #000;
+
+$bg-color-base   : #fff;
+$bg-color-darker : $gray-darker;
+$bg-color-dark   : $gray-dark;
+$bg-color        : $gray;
+$bg-color-light  : $gray-light;
+$bg-color-lighter: $gray-lighter;
+
+$text-color-base   : #4a4a4a;
+$text-color-darker : $black;
+$text-color-dark   : $black;
+$text-color        : $text-color-base;
+$text-color-light  : #706e6e;
+$text-color-lighter: #979797;
+
+$hr-color-base   : #000;
+$hr-color-darker : $gray-darker;
+$hr-color-dark   : $gray-dark;
+$hr-color        : $gray-dark;
+$hr-color-light  : $gray-light;
+$hr-color-lighter: $gray-lighter;
+
+$link-dark-color      : $primary-color !default;
+$link-dark-hover-color: darken($primary-color, 15%) !default;
+
+$link-light-color      : $gray !default;
+$link-light-hover-color: darken($link-light-color, 15%) !default;
+
+$btn-default-color : #333 !default;
+$btn-default-bg    : #fff !default;
+$btn-default-border: #ccc !default;
+
+$btn-primary-color : #fff !default;
+$btn-primary-bg    : $primary-color !default;
+$btn-primary-border: $primary-color !default;
+
+$btn-secondary-color : $primary-color !default;
+$btn-secondary-bg    : $white !default;
+$btn-secondary-border: $primary-color !default;
+
+$btn-success-color : #fff !default;
+$btn-success-bg    : $success-color !default;
+$btn-success-border: darken($btn-success-bg, 5%) !default;
+
+$btn-warning-color : #fff !default;
+$btn-warning-bg    : $warning-color !default;
+$btn-warning-border: darken($btn-warning-bg, 5%) !default;
+
+$btn-danger-color : #fff !default;
+$btn-danger-bg    : $danger-color !default;
+$btn-danger-border: darken($btn-danger-bg, 5%) !default;
+
+$input-bg               : $white !default;
+$input-disabled-bg      : $gray-lighter !default;
+$input-color            : $text-color !default;
+$input-border           : #ccc !default;
+$input-border-focus     : #66afe9 !default;
+$input-color-placeholder: $text-color-lighter !default;
+
+$label-default-bg      : $gray-light !default;
+$label-primary-bg      : $primary-color !default;
+$label-success-bg      : $success-color !default;
+$label-warning-bg      : $warning-color !default;
+$label-danger-bg       : $danger-color !default;
+$label-color           : #fff !default;
+$label-link-hover-color: #fff !default;
+
+$vendor-facebook: black;
+$vendor-google: black;
+$vendor-github: black;
+$vendor-twitter: black;
+$vendor-dribbble: black;
+$vendor-linkedin: black;

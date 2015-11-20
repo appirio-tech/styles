@@ -1,0 +1,32 @@
+@import "work-includes";
+
+ul.spacings {
+  .example {
+    border: 1px solid $primary-color;
+
+    .filler {
+      min-height: 50px;
+      background-color: $primary-color;
+    }
+
+    &.spacing {
+      padding: $spacing;
+    }
+
+    &.spacing-big {
+      padding: $spacing-big;
+    }
+
+    &.spacing-biggest {
+      padding: $spacing-biggest;
+    }
+
+    &.spacing-small {
+      padding: $spacing-small;
+    }
+
+    &.spacing-smallest {
+      padding: $spacing-smallest;
+    }
+  }
+}

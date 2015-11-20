@@ -1,0 +1,23 @@
+@import "work-includes";
+
+ul.font-sizes {
+  .font-size {
+    font-size: $font-size;
+  }
+
+  .font-size-big {
+    font-size: $font-size-big;
+  }
+
+  .font-size-biggest {
+    font-size: $font-size-biggest;
+  }
+
+  .font-size-small {
+    font-size: $font-size-small;
+  }
+
+  .font-size-smallest {
+    font-size: $font-size-smallest;
+  }
+}

@@ -1,0 +1,25 @@
+@import "work-includes";
+
+ul.line-heights {
+  @include flex-center(flex-start, $spacing);
+
+  .line-height {
+    line-height: $line-height;
+  }
+
+  .line-height-big {
+    line-height: $line-height-big;
+  }
+
+  .line-height-biggest {
+    line-height: $line-height-biggest;
+  }
+
+  .line-height-small {
+    line-height: $line-height-small;
+  }
+
+  .line-height-smallest {
+    line-height: $line-height-smallest;
+  }
+}

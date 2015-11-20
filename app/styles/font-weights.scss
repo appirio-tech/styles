@@ -1,0 +1,23 @@
+@import "work-includes";
+
+ul.font-weights {
+  .font-weight {
+    font-weight: $font-weight;
+  }
+
+  .font-weight-bold {
+    font-weight: $font-weight-bold;
+  }
+
+  .font-weight-boldest {
+    font-weight: $font-weight-boldest;
+  }
+
+  .font-weight-light {
+    font-weight: $font-weight-light;
+  }
+
+  .font-weight-lightest {
+    font-weight: $font-weight-lightest;
+  }
+}

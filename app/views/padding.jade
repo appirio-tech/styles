@@ -1,0 +1,15 @@
+- paddings = ['padding-smallest', 'padding-small', 'padding', 'padding-big', 'padding-biggest']
+
+a.anchor(name="paddings")
+
+h1 <strike>Paddings</strike>
+
+hr
+
+ul.examples.paddings
+  - for padding in paddings
+    li
+      label <strike>$#{padding}</strike>
+
+      .example(class=padding)
+        .filler.primary-color

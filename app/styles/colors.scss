@@ -1,0 +1,94 @@
+@import "work-includes";
+
+ul.examples.colors {
+  li {
+    .example {
+      min-width : 50px;
+      min-height: 50px;
+
+      &.primary-color {
+        background-color: $primary-color;
+      }
+
+      &.primary-color-light {
+        background-color: $primary-color-light;
+      }
+
+      &.primary-color-dark {
+        background-color: $primary-color-dark;
+      }
+
+      &.neutral-color-light {
+        background-color: $neutral-color-light;
+      }
+
+      &.neutral-color-lightest {
+        background-color: $neutral-color-lightest;
+      }
+
+      &.neutral-color {
+        background-color: $neutral-color;
+      }
+
+      &.neutral-color-dark {
+        background-color: $neutral-color-dark;
+      }
+
+      &.neutral-color-darkest {
+        background-color: $neutral-color-darkest;
+      }
+
+      &.text-color-light {
+        background-color: $text-color-light;
+      }
+
+      &.text-color-lightest {
+        background-color: $text-color-lightest;
+      }
+
+      &.text-color {
+        background-color: $text-color;
+      }
+
+      &.text-color-dark {
+        background-color: $text-color-dark;
+      }
+
+      &.text-color-darkest {
+        background-color: $text-color-darkest;
+      }
+
+      &.text-color-light {
+        background-color: $text-color-light;
+      }
+
+      &.text-color-lightest {
+        background-color: $text-color-lightest;
+      }
+
+      &.success-color {
+        background-color: $success-color;
+      }
+
+      &.danger-color {
+        background-color: $danger-color;
+      }
+
+      &.danger-color-light {
+        background-color: $danger-color-light;
+      }
+
+      &.danger-color-lightest {
+        background-color: $danger-color-lightest;
+      }
+
+      &.white {
+        background-color: $white;
+      }
+
+      &.black {
+        background-color: $black;
+      }
+    }
+  }
+}

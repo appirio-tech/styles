@@ -1,0 +1,17 @@
+- spacings = ['spacing', 'spacing-small', 'spacing-smallest', 'spacing-big', 'spacing-biggest']
+
+a.anchor(name="spacing")
+
+h1
+  strike Spacing
+
+hr
+
+ul.examples.spacings
+  - for spacing in spacings
+    li
+      label
+        strike $#{spacing}
+
+      .example(class=spacing)
+        .filler.primary-color

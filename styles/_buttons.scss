@@ -1,0 +1,124 @@
+a.button, button {
+  border-radius   : $border-radius;
+  border          : 1px solid $primary-color;
+  padding         : 8px 24px;
+  color           : $primary-color;
+  background-color: $white;
+  cursor          : pointer;
+  font-size       : $font-size-small;
+  font-weight     : $font-weight-boldest;
+  text-transform  : uppercase;
+  display         : inline-block;
+  font-family     : "source-sans-pro";
+
+  &.smallest {
+    font-size: $font-size-smallest;
+    padding: $padding-smallest;
+  }
+
+  &.small {
+    font-size: $font-size-small;
+    padding: $padding-small;
+  }
+
+  &.big {
+    font-size: $font-size-big;
+    padding: $padding-big;
+  }
+
+  &.biggest {
+    font-size: $font-size-biggest;
+    padding: $padding-biggest;
+  }
+
+  &.wide {
+    min-width: 140px;
+    width: 140px; /* to make ie happy */
+  }
+
+  &.wider {
+    min-width: 240px;
+    width: 240px; /* to make ie happy */
+  }
+
+  &.widest {
+    width: 100%;
+  }
+
+  &.action {
+    background-color: $primary-color;
+    color           : $white;
+
+    &:hover {
+      background-color: $primary-color-dark;
+    }
+
+    &:disabled {
+      background-color: $primary-color-light;
+    }
+  }
+
+  &.success {
+    background-color: $success-color;
+    color           : $white;
+    border          : none;
+    margin          : 1px; /* compensate for border none */
+
+    &:hover {
+      background-color: #6B8E01;
+    }
+
+    &:disabled {
+      background-color: #B6C194;
+    }
+  }
+
+  &.danger {
+    background-color: $danger-color;
+    color           : white;
+    border          : none;
+    margin          : 1px; /* compensate for border none */
+
+    &:hover {
+      background-color: #802511;
+    }
+
+    &:disabled {
+      background-color: #DEA295;
+    }
+  }
+
+  &.info {
+    background-color: $primary-color;
+    color           : $black;
+    border          : none;
+    margin          : 1px; /* compensate for border none */
+
+    &:hover {
+      background-color: #0282BD;
+    }
+
+    &:disabled {
+      background-color: #A6E0FB;
+    }
+  }
+
+  &.hollow {
+    background-color: transparent;
+    color           : $white;
+    border-color    : $white;
+  }
+
+  &.clean {
+    background-color: transparent;
+    border-radius   : 0;
+    border          : none;
+    padding         : 0;
+    margin          : 0;
+    font-size       : inherit;
+    font            : inherit;
+    line-height     : inherit;
+    font-weight     : inherit;
+    text-transform  : inherit;
+  }
+}
