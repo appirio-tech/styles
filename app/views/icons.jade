@@ -1,5 +1,4 @@
 - icons = ['checkmark', 'checkmark-white', 'bubble', 'envelope', 'circle-arrow', 'circle-arrow.right', 'arrow', 'arrow.right', 'warning', 'download', 'cross', 'plus', 'plus.hollow']
-- sizes = ['smallest', 'small', '', 'big', 'biggest']
 
 a.anchor(name="icons")
 
@@ -7,12 +6,9 @@ h1 Icons
 
 hr
 
-- for icon in icons
-  h2 #{icon}
+ul.examples.icons
+  - for icon in icons
+    li
+      label .icon.#{icon}
 
-  ul.examples.icons
-    - for size in sizes
-      li
-        label <strike>.icon.#{icon}.#{size}</strike>
-
-        .example.icon(class="#{icon.replace('.', ' ')} #{size}")
+      .example.icon(class="#{icon.replace('.', ' ')}")

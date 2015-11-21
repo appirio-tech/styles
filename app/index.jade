@@ -27,7 +27,7 @@ html(ng-app='timeline')
       try{Typekit.load({ async: true });}catch(e){}
 
   body
-    ul.nav(role="navigation")
+    ul.nav.flex.center(role="navigation")
       each nav in navs
         - var spaces = nav.replace('-', ' ')
         li

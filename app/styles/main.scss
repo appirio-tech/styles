@@ -22,7 +22,6 @@ body {
 }
 
 .nav {
-  @include flex-center(center, 5px);
   @include align-items(center);
 
   text-transform: capitalize;
