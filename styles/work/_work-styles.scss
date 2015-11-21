@@ -1,0 +1,157 @@
+@import "work-includes";
+@import "work/reset";
+@import "work/dark-bg";
+@import "work/light-bg";
+@import "work/buttons";
+@import "work/typography";
+@import "work/form";
+@import "work/icons";
+@import "work/lists";
+@import "work/hrs";
+
+html {
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+main, header, footer { /* ie dosnt support these tags */
+  display: block;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family        : "source-sans-pro";
+  position           : relative;
+  min-height         : 100%;
+  margin             : 0;
+  padding            : 0;
+  overflow-x         : hidden;
+  overflow-y         : auto;
+  -webkit-text-stroke: 1px transparent;
+  background-color   : $neutral-color-darkest;
+  font-size          : $font-size;
+  font-weight        : $font-weight-light;
+  color              : $text-color;
+}
+
+hr {
+  height          : 2px;
+  border          : none;
+  background-color: $neutral-color-lightest;
+  margin          : 0;
+}
+
+a {
+  cursor         : pointer;
+  color          : $primary-color;
+  text-decoration: none;
+  font-weight    : $font-weight-light;
+}
+
+.elevated-bottom {
+  border-bottom: 1px solid $neutral-color-light;
+}
+
+.elevated {
+  @include elevated;
+}
+
+.notification {
+  $diameter: 24px;
+
+  padding         : $padding-smallest;
+  background-color: $danger-color;
+  border-radius   : $diameter;
+  color           : $white;
+  min-width       : $diameter;
+  min-height      : $diameter;
+  text-align      : center;
+  display         : inline-block;
+
+  &.absolute {
+    position: absolute;
+    top     : -$diameter/2;
+    right   : -$diameter/2;
+  }
+
+  &.small {
+    font-size: $font-size-smallest;
+  }
+}
+
+.none {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.relative {
+  position: relative;
+}
+
+.no-height {
+  max-height: 0 !important;
+  overflow: hidden;
+}
+
+.flex {
+  @include display(flex);
+
+  &.column {
+    @include flex-direction(column);
+  }
+
+  &.center {
+    @include justify-content(center);
+  }
+
+  &.end {
+    @include justify-content(flex-end);
+  }
+
+  &.space-between {
+    @include justify-content(space-between);
+  }
+
+  &.space-around {
+    @include justify-content(space-around);
+  }
+
+  &.middle {
+    @include align-items(center);
+  }
+
+  &.stretch {
+    @include align-items(stretch);
+  }
+
+  &.bottom {
+    @include align-items(flex-end);
+  }
+
+  &.wrap {
+    @include flex-wrap(wrap);
+  }
+}
+
+.flex-grow {
+  @include flex-grow(1);
+}
+
+.flex-one {
+  @include flex(1);
+}
+
+.flex-shrink {
+  @include flex-shrink(1);
+  @include flex-basis(100px);
+}
+
+.transition {
+  @include transition (all 0.2s ease-in-out);
+}

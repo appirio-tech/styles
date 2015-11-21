@@ -6,81 +6,41 @@ hr
 
 ul(style="list-style-type: disc;")
   li
-    h1 h1 - some header text
+    h1 h1 - some header text <strong>strong</strong>
 
   li
-    h2 h2 - some header text
+    h2 h2 - some header text <strong>strong</strong>
 
   li
-    h3 h3 - some header text
+    h3 h3 - some header text <strong>strong</strong>
 
   li
-    h4 h4 - some header text
+    h4 h4 - some header text <strong>strong</strong>
 
   li
-    h5 h5 - some header text
+    h5 h5 - some header text <strong>strong</strong>
 
   li
-    h6 h6 - some header text
+    h6 h6 - some header text <strong>strong</strong>
 
   li
-    time time - 10/24/2015
+    time time - 10/24/2015 <strong>strong</strong>
 
   li
-    label label
-
-  li this is <strong>strong</strong>
+    label label <strong>strong</strong>
 
   li
-    a a - this is a link
+    a a - this is a link <strong>strong</strong>
 
   li
-    a.button.action a.button.action
+    a.button.action a.button.action <strong>strong</strong>
 
   li
-    p p (Lorem ipsum dolor sit amet, <br />consectetur adipiscing elit, <br />sed do eiusmod tempor incididunt ut labore)
+    p p (Lorem ipsum dolor sit amet, <br />consectetur adipiscing elit, <br />sed do eiusmod tempor incididunt ut labore) <strong>strong</strong>
 
   li
-    p.error p.error
+    p.error p.error <strong>strong</strong>
 
   li
-    p.secondary p.secondary
+    p.secondary p.secondary <strong>strong</strong>
 
-- fontSizes = ['font-size-smallest', 'font-size-small', 'font-size', 'font-size-big', 'font-size-biggest']
-
-a.anchor(name="font-sizes")
-
-h1 <strike>Font Sizes</strike>
-
-ul.examples.font-sizes
-  - for fontSize in fontSizes
-    li
-      label <strike>$#{fontSize}</strike>
-
-      .example(class=fontSize) Lorem ipsum dolor sit amet, <br />consectetur adipiscing elit, <br />sed do eiusmod tempor incididunt ut labore
-
-- fontWeights = ['font-weight-lightest', 'font-weight-light', 'font-weight', 'font-weight-bold', 'font-weight-boldest']
-
-a.anchor(name="font-weights")
-
-h1 Font Weights
-
-ul.examples.font-weights
-  - for fontWeight in fontWeights
-    li
-      label $#{fontWeight}
-
-      .example(class=fontWeight) Lorem ipsum dolor sit amet, <br />consectetur adipiscing elit, <br />sed do eiusmod tempor incididunt ut labore
-
-- lineHeights = ['line-height-smallest', 'line-height-small', 'line-height', 'line-height-big', 'line-height-biggest']
-
-a.anchor(name="line-heights")
-
-h1 <strike>Line Heights</strike>
-
-ul.examples.line-heights
-  - for lineHeight in lineHeights
-    li
-      label <strike>$#{lineHeight}</strike>
-
-      .example(class=lineHeight style="background-color:grey") Lorem ipsum dolor sit amet, <br />consectetur adipiscing elit, <br />sed do eiusmod tempor incididunt ut labore

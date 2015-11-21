@@ -1,15 +1,15 @@
 {
-  "name": "appirio-work-styles",
+  "name": "appirio-styles",
   "main": "index.js",
   "version": "0.0.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/appirio-tech/work-styles.git"
+    "url": "git://github.com/appirio-tech/styles.git"
   },
   "bugs": {
-    "url": "https://github.com/appirio-tech/work-styles/issues"
+    "url": "https://github.com/appirio-tech/styles/issues"
   },
-  "homepage": "https://github.com/appirio-tech/work-styles",
+  "homepage": "https://github.com/appirio-tech/styles",
   "devDependencies": {
     "appirio-gulp-tasks": "3.x.x",
     "gulp": "^3.8.11",
