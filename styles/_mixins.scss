@@ -20,6 +20,7 @@
   box-shadow: 0 0px 6px 0px $neutral-color-dark;
 }
 
+// styleguide:ignore:start
 @mixin exclude-first($property: margin-top, $value: 10px, $first-value: 0px) {
   #{$property}: $value;
 
@@ -27,4 +28,4 @@
     #{$property}: $first-value;
   }
 }
-
+// styleguide:ignore:end
