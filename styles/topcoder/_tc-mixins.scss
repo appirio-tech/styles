@@ -18,55 +18,12 @@
   }
 }
 
-// Placeholders refactored
-// ----------------------------------------------------------------------------
-// from 'http://stackoverflow.com/questions/17181849/placeholder-mixin-scss-css'
-//
-// Usage:
-//
-// .foo {
-//   @include placeholder {
-//     color: green;
-//   }
-// }
-
-// @include placeholder {
-//   color: red;
-// }
-
-
-// Smart, but not working for me currently :(
-// @mixin optional-at-root($sel) {
-//   @at-root #{if(not &, $sel, selector-append(&, $sel))} {
-//     @content;
-//   }
-// }
-
-// @mixin placeholder {
-//   @include optional-at-root('::-webkit-input-placeholder') {
-//     @content;
-//   }
-
-//   @include optional-at-root(':-moz-placeholder') {
-//     @content;
-//   }
-
-//   @include optional-at-root('::-moz-placeholder') {
-//     @content;
-//   }
-
-//   @include optional-at-root(':-ms-input-placeholder') {
-//     @content;
-//   }
-// }
-
 @mixin placeholder {
-  &::-webkit-input-placeholder {@content}
-  &:-moz-placeholder           {@content}
-  &::-moz-placeholder          {@content}
-  &:-ms-input-placeholder      {@content}
+  &::-webkit-input-placeholder {@content;}
+  &:-moz-placeholder           {@content;}
+  &::-moz-placeholder          {@content;}
+  &:-ms-input-placeholder      {@content;}
 }
-
 
 //
 // Pass a number, and use in different places. How to use:
@@ -92,8 +49,6 @@
     @content;
   }
 }
-
-
 
 // HELPERS
 // ----------------------------------------------------------------------------
@@ -142,7 +97,7 @@
 
 @mixin label-description {
   font: {
-    family: "Merriweather Sans",Arial, Helvetica, sans-serif;
+    family: 'Merriweather Sans', Arial, Helvetica, sans-serif;
     weight: 400;
     size: 13px;
   }
@@ -150,7 +105,7 @@
 
 @mixin merriweather-sans-regular {
   font: {
-    family: "Merriweather Sans", Arial, Helvetica, sans-serif;
+    family: 'Merriweather Sans', Arial, Helvetica, sans-serif;
     weight: 400;
   }
 }
@@ -336,57 +291,9 @@
   font-size: 46px;
 }
 
-
-// TODO: Cleanup
-@mixin ui-form-field {
-  // height: 40px;
-  // width: 300px;
-  // padding: 0;
-  // padding-left: 15px;
-  // background-color: $gray-lightest;
-  // @include source-sans-regular;
-  // font-size: 16px;
-  // color: #231F20;
-  // TODO REMOVED: use _tc-inputs !!!!
-}
-
-@mixin ui-form-placeholder {
-  // ::-webkit-input-placeholder {
-  //   color: #B7B7B7;
-  // }
-  // ::-moz-placeholder { /* Firefox 19+ */
-  //   color: #B7B7B7;
-  // }
-  // :-ms-input-placeholder {
-  //   color: #B7B7B7;
-  // }
-  // :-moz-placeholder { /* Firefox 18- */
-  //   color: #B7B7B7;
-  // }
-  // TODO REMOVED: use _tc-inputs !!!!
-}
-
-@mixin community-form-placeholder {
-  // ::-webkit-input-placeholder {
-  //   color: #ADADB7;
-  // }
-  // ::-moz-placeholder { /* Firefox 19+ */
-  //   color: #ADADB7;
-  // }
-  // :-ms-input-placeholder {
-  //   color: #ADADB7;
-  // }
-  // :-moz-placeholder { /* Firefox 18- */
-  //   color: #ADADB7;
-  // }
-  // TODO REMOVED: use _tc-inputs !!!!
-}
-
-
-
 // OLD MIXINS
 // ----------------------------------------------------------------------------
-// We have to review those;
+// We have to review these;
 
 @mixin ui-enabled-button {
   background-color: $ui-enabled-button-blue;
@@ -410,8 +317,4 @@
 @mixin ui-track-button-selected {
   background-color: $ui-enabled-button-blue;
   color: $ui-page-gray;
-}
-
-@mixin ui-toggle-switch {
-
 }
