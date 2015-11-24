@@ -1,8 +1,8 @@
 var path = require('path');
-var workStylesDir = __dirname + '/styles'
+var stylesDir = __dirname + '/styles'
 
 function includePaths() {
-  return require('node-neat').includePaths.concat(workStylesDir);
+  return require('node-neat').includePaths.concat(stylesDir);
 }
 
 module.exports = {
