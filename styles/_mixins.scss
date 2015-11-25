@@ -1,6 +1,6 @@
 @mixin font-line($pt) {
-  font-size     : $pt;
-  padding-bottom: $pt * 0.20; /* due to font extending out */
+  font-size  : $pt;
+  line-height: $pt * 1.5;
 }
 
 @mixin vertical-align-middle() {

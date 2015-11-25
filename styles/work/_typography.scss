@@ -43,9 +43,9 @@ label {
 }
 
 p {
-  font-size  : $font-size;
+  @include font-line($font-size);
+
   font-weight: $font-weight-light;
-  line-height: $line-height;
 
   &.secondary {
     color: $text-color-lightest;
