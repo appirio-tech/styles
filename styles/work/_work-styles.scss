@@ -1,13 +1,11 @@
 @import "work-includes";
 @import "reset";
 @import "dark-bg";
-@import "light-bg";
 @import "buttons";
 @import "typography";
 @import "form";
 @import "icons";
 @import "lists";
-@import "hrs";
 
 html {
   min-height: 100%;
@@ -31,16 +29,16 @@ body {
   overflow-x         : hidden;
   overflow-y         : auto;
   -webkit-text-stroke: 1px transparent;
-  background-color   : $neutral-color-darkest;
-  font-size          : $font-size;
-  font-weight        : $font-weight-light;
+  background-color   : $grey-darkest;
+  font-size          : 15px;
+  font-weight        : 300;
   color              : $text-color;
 }
 
 hr {
   height          : 2px;
   border          : none;
-  background-color: $neutral-color-lightest;
+  background-color: $grey-lightest;
   margin          : 0;
 }
 
@@ -48,11 +46,11 @@ a {
   cursor         : pointer;
   color          : $primary-color;
   text-decoration: none;
-  font-weight    : $font-weight-light;
+  font-weight    : 300;
 }
 
 .elevated-bottom {
-  border-bottom: 1px solid $neutral-color-light;
+  border-bottom: 1px solid $grey-light;
 }
 
 .elevated {
@@ -62,7 +60,7 @@ a {
 .notification {
   $diameter: 24px;
 
-  padding         : $padding-smallest;
+  padding         : 10px;
   background-color: $danger-color;
   border-radius   : $diameter;
   color           : $white;
@@ -78,7 +76,7 @@ a {
   }
 
   &.small {
-    font-size: $font-size-smallest;
+    font-size: 12px;
   }
 }
 

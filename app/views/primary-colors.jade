@@ -1,13 +1,20 @@
-- primaryColors = ['primary-color', 'primary-color-light', 'primary-color-dark', 'success-color', 'danger-color', 'danger-color-light', 'danger-color-lightest', 'white', 'black']
+- primaryColors = ['primary-color-base', 'primary-color-darker', 'primary-color-dark', 'primary-color', 'primary-color-light', 'primary-color-lighter', 'success-color-base', 'success-color-darker', 'success-color-dark', 'success-color', 'success-color-light', 'success-color-lighter', 'warning-color-base', 'warning-color-darker', 'warning-color-dark', 'warning-color', 'warning-color-light', 'warning-color-lighter', 'danger-color-base', 'danger-color-darker', 'danger-color-dark', 'danger-color', 'danger-color-light', 'danger-color-lighter', 'gray-base', 'gray-darkest', 'gray-darker', 'gray-dark', 'gray', 'gray-light', 'gray-lighter', 'gray-lightest', 'white', 'black', 'bg-color-base', 'bg-color-darker', 'bg-color-dark', 'bg-color', 'bg-color-light', 'bg-color-lighter', 'text-color-base', 'text-color-darker', 'text-color-dark', 'text-color', 'text-color-light', 'text-color-lighter', 'hr-color-base', 'hr-color-darker', 'hr-color-dark', 'hr-color', 'hr-color-light', 'hr-color-lighter', 'link-dark-color', 'link-dark-hover-color', 'link-light-color', 'link-light-hover-color', 'btn-default-color', 'btn-default-bg', 'btn-default-border', 'btn-primary-color', 'btn-primary-bg', 'btn-primary-border', 'btn-secondary-color', 'btn-secondary-bg', 'btn-secondary-border', 'btn-success-color', 'btn-success-bg', 'btn-success-border', 'btn-warning-color', 'btn-warning-bg', 'btn-warning-border', 'btn-danger-color', 'btn-danger-bg', 'btn-danger-border', 'input-bg', 'input-disabled-bg', 'input-color', 'input-border', 'input-border-focus', 'input-color-placeholder', 'label-default-bg', 'label-primary-bg', 'label-success-bg', 'label-warning-bg', 'label-danger-bg', 'label-color', 'label-link-hover-color', 'vendor-facebook', 'vendor-google', 'vendor-github', 'vendor-twitter', 'vendor-dribbble', 'vendor-linkedin']
+
+- prefix = ''
 
 a.anchor(name="primary-colors")
 
-h1 Primary Colors
+h1 Colors
 
 hr
 
 ul.examples.colors
   - for color in primaryColors
+    if color.split('-')[0] != prefix
+      - prefix = color.split('-')[0]
+      li.prefix-break
+        h3!=prefix
+
     li
       label $#{color}
 

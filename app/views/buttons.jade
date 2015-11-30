@@ -1,6 +1,4 @@
 - types = ['', 'action', 'success', 'danger', 'info', 'clean', 'hollow']
-- sizes = ['smallest', 'small', 'big', 'biggest']
-- widths = ['wide', 'wider']
 
 a.anchor(name="buttons")
 
@@ -20,23 +18,4 @@ ul.examples.buttons
 
         button(class=type disabled=true) Disabled
 
-ul.examples.buttons
-  - for size in sizes
-    li
-      label <strike>.#{size}</strike>
-
-      .example
-        button(class=size) Submit
-
-ul.examples.buttons
-  - for width in widths
-    li
-      label <strike>.#{width}</strike>
-
-      .example
-        button(class=width) Submit
-
-label .widest
-
-button.widest Submit
 

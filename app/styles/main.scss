@@ -27,7 +27,7 @@ body {
   text-transform: capitalize;
   position: fixed;
   top: 0;
-  background-color: $neutral-color-darkest;
+  background-color: $grey-darkest;
   width: 100%;
   height: 50px;
 
@@ -42,7 +42,7 @@ ul.examples {
     text-align: center;
 
     label {
-      margin-bottom: $spacing;
+      margin-bottom: 20px;
       display: inline-block;
     }
 

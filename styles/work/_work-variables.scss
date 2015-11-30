@@ -1,93 +1,19 @@
 // disable border-box-sizing in bourbon-neat
 $border-box-sizing: false;
 
-//*** deprecated
-$spacing         : 14px;
-$spacing-big     : 18px;
-$spacing-biggest : 24px;
-$spacing-small   : 10px;
-$spacing-smallest: 6px;
-
-$spacing         : 14px;
-$spacing-big     : 18px;
-$spacing-biggest : 24px;
-$spacing-small   : 10px;
-$spacing-smallest: 6px;
-
-$padding         : 16px;
-$padding-big     : 32px;
-$padding-biggest : 64px;
-$padding-small   : 8px;
-$padding-smallest: 4px;
-
-$margin         : 32px;
-$margin-big     : 64px;
-$margin-biggest : 128px;
-$margin-small   : 16px;
-$margin-smallest: 8px;
-
-$font-size-smallest: 12px;
-$font-size-small   : 14px;
-$font-size         : 15px;
-$font-size-big     : 16px;
-$font-size-biggest : 18px;
-
-$line-height-smallest: 15px;
-$line-height-small   : 18px;
-$line-height         : 19px;
-$line-height-big     : 20px;
-$line-height-biggest : 23px;
-
-$border-radius         : 6px;
-$border-radius-big     : 8px;
-$border-radius-biggest : 10px;
-$border-radius-small   : 4px;
-$border-radius-smallest: 2px;
-
-$black: #3e3e3e;
-$white: #fff;
-
-$primary-color        : #00aeff;
-$primary-color-light  : #ddf2fd;
-$primary-color-dark   : #0096ff;
-$success-color        : #99cc00;
-$danger-color         : #ff0066;
-$danger-color-light   : #ed7878;
-$danger-color-lightest: #ffcce1;
-
-$neutral-color         : #d7d5d5;
-$neutral-color-dark    : #c3c1c1;
-$neutral-color-darkest : #8c8b8b;
-$neutral-color-light   : #e6e6e6;
-$neutral-color-lightest: #f2f2f2;
-
-$text-color-lightest: #979797;
-$text-color-light   : #706e6e;
-$text-color         : #4a4a4a;
-$text-color-dark    : #111;
-$text-color-darkest : #000;
-
-$font-weight         : 400;
-$font-weight-light   : 300;
-$font-weight-lightest: 200;
-$font-weight-bold    : 500;
-$font-weight-boldest : 700;
-
-//*** deprecated end
-
 $primary-color-base   : #00aeff !default;
-$primary-color-darker : $black;
+$primary-color-darker : #000;
 $primary-color-dark   : #0096ff;
 $primary-color        : #00aeff;
 $primary-color-light  : #ddf2fd;
-$primary-color-lighter: $white;
+$primary-color-lighter: #fff;
 
 $success-color-base   : #000 !default;
-$success-color-darker : $black;
-$success-color-dark   : $black;
+$success-color-darker : #000;
+$success-color-dark   : #000;
 $success-color        : #99cc00;
-$success-color-light  : $white;
-$success-color-lighter: $white;
+$success-color-light  : #fff;
+$success-color-lighter: #fff;
 
 $warning-color-base   : #000 !default;
 $warning-color-darker : lighten($warning-color-base, 13.5%);
@@ -97,21 +23,29 @@ $warning-color-light  : lighten($warning-color-base, 46.7%);
 $warning-color-lighter: lighten($warning-color-base, 93.5%);
 
 $danger-color-base   : #ff0066 !default;
-$danger-color-darker : $black;
-$danger-color-dark   : $black;
+$danger-color-darker : #000;
+$danger-color-dark   : #000;
 $danger-color        : #ff0066;
 $danger-color-light  : #ed7878;
 $danger-color-lighter: #ffcce1;
 
-
-$gray-base   : #d7d5d5 !default;
-$gray-darkest: $black;
-$gray-darker : #8c8b8b;
-$gray-dark   : #c3c1c1;
+$gray-base   : #c3c1c1 !default;
+$gray-darkest: #3e3e3e;
+$gray-darker : #706e6e;
+$gray-dark   : #8c8b8b;
 $gray        : $gray-base;
-$gray-light  : #e6e6e6;
+$gray-light  : #d6d6d6;
 $gray-lighter: #f2f2f2;
-$gray-lightest: $white;
+$gray-lightest: #f9f9f9;
+
+$grey-base   : $gray-base;
+$grey-darkest: $gray-darkest;
+$grey-darker : $gray-darker;
+$grey-dark   : $gray-dark;
+$grey        : $gray;
+$grey-light  : $gray-light;
+$grey-lighter: $gray-lighter;
+$grey-lightest: $gray-lightest;
 
 $white: #fff;
 $black: #000;
@@ -124,8 +58,8 @@ $bg-color-light  : $gray-light;
 $bg-color-lighter: $gray-lighter;
 
 $text-color-base   : #4a4a4a;
-$text-color-darker : $black;
-$text-color-dark   : $black;
+$text-color-darker : #000;
+$text-color-dark   : #000;
 $text-color        : $text-color-base;
 $text-color-light  : #706e6e;
 $text-color-lighter: #979797;
@@ -152,7 +86,7 @@ $btn-primary-bg    : $primary-color !default;
 $btn-primary-border: $primary-color !default;
 
 $btn-secondary-color : $primary-color !default;
-$btn-secondary-bg    : $white !default;
+$btn-secondary-bg    : #fff !default;
 $btn-secondary-border: $primary-color !default;
 
 $btn-success-color : #fff !default;
@@ -167,7 +101,7 @@ $btn-danger-color : #fff !default;
 $btn-danger-bg    : $danger-color !default;
 $btn-danger-border: darken($btn-danger-bg, 5%) !default;
 
-$input-bg               : $white !default;
+$input-bg               : #fff !default;
 $input-disabled-bg      : $gray-lighter !default;
 $input-color            : $text-color !default;
 $input-border           : #ccc !default;

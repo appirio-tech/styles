@@ -1,7 +1,7 @@
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color         : $text-color-light;
-  font-weight   : $font-weight-lightest;
+  font-weight   : 200;
   font-family   : "sofia-pro";
 }
 
@@ -34,26 +34,25 @@ h6 {
 }
 
 time {
-  color: $neutral-color-dark;
+  color: $gray-dark;
 }
 
 label {
-  font-weight: $font-weight-bold;
+  font-weight: 500;
   text-transform: capitalize;
 }
 
 p {
-  @include font-line($font-size);
+  @include font-line(15px);
 
-  font-weight: $font-weight-light;
+  font-weight: 300;
 
   &.secondary {
-    color: $text-color-lightest;
+    color: $text-color-lighter;
   }
 
   &.error {
-    font-size  : $font-size-small;
-    line-height: $line-height-small;
+    font-size  : 14px;
     color      : $danger-color;
     font-style : italic;
   }
@@ -68,5 +67,5 @@ p {
 }
 
 strong {
-  font-weight: $font-weight-bold;
+  font-weight: 500;
 }

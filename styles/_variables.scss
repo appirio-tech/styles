@@ -35,6 +35,15 @@ $gray-light   : lighten($gray-base, 46.7%);
 $gray-lighter : lighten($gray-base, 93.5%);
 $gray-lightest: lighten($gray-base, 97.5%);
 
+$grey-base   : $gray-base;
+$grey-darkest: $gray-darkest;
+$grey-darker : $gray-darker;
+$grey-dark   : $gray-dark;
+$grey        : $gray;
+$grey-light  : $gray-light;
+$grey-lighter: $gray-lighter;
+$grey-lightest: $gray-lightest;
+
 $white: #fff;
 $black: #000;
 

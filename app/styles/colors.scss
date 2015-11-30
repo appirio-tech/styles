@@ -5,90 +5,306 @@ ul.examples.colors {
     .example {
       min-width : 50px;
       min-height: 50px;
+    }
 
-      &.primary-color {
-        background-color: $primary-color;
-      }
+    &.prefix-break {
+      width: 100%;
+      text-align: left;
+    }
 
-      &.primary-color-light {
-        background-color: $primary-color-light;
-      }
+    .primary-color-base {
+      background-color: $primary-color-base;
+    }
+    .primary-color-darker {
+      background-color: $primary-color-darker;
+    }
+    .primary-color-dark {
+      background-color: $primary-color-dark;
+    }
+    .primary-color {
+      background-color: $primary-color;
+    }
+    .primary-color-light {
+      background-color: $primary-color-light;
+    }
+    .primary-color-lighter {
+      background-color: $primary-color-lighter;
+    }
+    .success-color-base {
+      background-color: $success-color-base;
+    }
+    .success-color-darker {
+      background-color: $success-color-darker;
+    }
+    .success-color-dark {
+      background-color: $success-color-dark;
+    }
+    .success-color {
+      background-color: $success-color;
+    }
+    .success-color-light {
+      background-color: $success-color-light;
+    }
+    .success-color-lighter {
+      background-color: $success-color-lighter;
+    }
 
-      &.primary-color-dark {
-        background-color: $primary-color-dark;
-      }
+    .warning-color-base {
+      background-color: $warning-color-base;
+    }
+    .warning-color-darker {
+      background-color: $warning-color-darker;
+    }
+    .warning-color-dark {
+      background-color: $warning-color-dark;
+    }
+    .warning-color {
+      background-color: $warning-color;
+    }
+    .warning-color-light {
+      background-color: $warning-color-light;
+    }
+    .warning-color-lighter {
+      background-color: $warning-color-lighter;
+    }
+    .danger-color-base {
+      background-color: $danger-color-base;
+    }
+    .danger-color-darker {
+      background-color: $danger-color-darker;
+    }
+    .danger-color-dark {
+      background-color: $danger-color-dark;
+    }
+    .danger-color {
+      background-color: $danger-color;
+    }
+    .danger-color-light {
+      background-color: $danger-color-light;
+    }
+    .danger-color-lighter {
+      background-color: $danger-color-lighter;
+    }
+    .gray-base {
+      background-color: $gray-base;
+    }
+    .gray-darkest {
+      background-color: $gray-darkest;
+    }
+    .gray-darker {
+      background-color: $gray-darker;
+    }
+    .gray-dark {
+      background-color: $gray-dark;
+    }
+    .gray {
+      background-color: $gray;
+    }
+    .gray-light {
+      background-color: $gray-light;
+    }
+    .gray-lighter {
+      background-color: $gray-lighter;
+    }
+    .gray-lightest {
+      background-color: $gray-lightest;
+    }
 
-      &.neutral-color-light {
-        background-color: $neutral-color-light;
-      }
+    .white {
+      background-color: $white;
+    }
+    .black {
+      background-color: $black;
+    }
+    .bg-color-base {
+      background-color: $bg-color-base;
+    }
+    .bg-color-darker {
+      background-color: $bg-color-darker;
+    }
+    .bg-color-dark {
+      background-color: $bg-color-dark;
+    }
+    .bg-color {
+      background-color: $bg-color;
+    }
+    .bg-color-light {
+      background-color: $bg-color-light;
+    }
+    .bg-color-lighter {
+      background-color: $bg-color-lighter;
+    }
 
-      &.neutral-color-lightest {
-        background-color: $neutral-color-lightest;
-      }
+    .text-color-base {
+      background-color: $text-color-base;
+    }
+    .text-color-darker {
+      background-color: $text-color-darker;
+    }
+    .text-color-dark {
+      background-color: $text-color-dark;
+    }
+    .text-color {
+      background-color: $text-color;
+    }
+    .text-color-light {
+      background-color: $text-color-light;
+    }
+    .text-color-lighter {
+      background-color: $text-color-lighter;
+    }
 
-      &.neutral-color {
-        background-color: $neutral-color;
-      }
+    .hr-color-base {
+      background-color: $hr-color-base;
+    }
+    .hr-color-darker {
+      background-color: $hr-color-darker;
+    }
+    .hr-color-dark {
+      background-color: $hr-color-dark;
+    }
+    .hr-color {
+      background-color: $hr-color;
+    }
+    .hr-color-light {
+      background-color: $hr-color-light;
+    }
+    .hr-color-lighter {
+      background-color: $hr-color-lighter;
+    }
 
-      &.neutral-color-dark {
-        background-color: $neutral-color-dark;
-      }
+    .link-dark-color {
+      background-color: $link-dark-color;
+    }
+    .link-dark-hover-color {
+      background-color: $link-dark-hover-color;
+    }
 
-      &.neutral-color-darkest {
-        background-color: $neutral-color-darkest;
-      }
+    .link-light-color {
+      background-color: $link-light-color;
+    }
+    .link-light-hover-color {
+      background-color: $link-light-hover-color;
+    }
 
-      &.text-color-light {
-        background-color: $text-color-light;
-      }
+    .btn-default-color {
+      background-color: $btn-default-color;
+    }
+    .btn-default-bg {
+      background-color: $btn-default-bg;
+    }
+    .btn-default-border {
+      background-color: $btn-default-border;
+    }
 
-      &.text-color-lightest {
-        background-color: $text-color-lightest;
-      }
+    .btn-primary-color {
+      background-color: $btn-primary-color;
+    }
+    .btn-primary-bg {
+      background-color: $btn-primary-bg;
+    }
+    .btn-primary-border {
+      background-color: $btn-primary-border;
+    }
 
-      &.text-color {
-        background-color: $text-color;
-      }
+    .btn-secondary-color {
+      background-color: $btn-secondary-color;
+    }
+    .btn-secondary-bg {
+      background-color: $btn-secondary-bg;
+    }
+    .btn-secondary-border {
+      background-color: $btn-secondary-border;
+    }
 
-      &.text-color-dark {
-        background-color: $text-color-dark;
-      }
+    .btn-success-color {
+      background-color: $btn-success-color;
+    }
+    .btn-success-bg {
+      background-color: $btn-success-bg;
+    }
+    .btn-success-border {
+      background-color: $btn-success-border;
+    }
 
-      &.text-color-darkest {
-        background-color: $text-color-darkest;
-      }
+    .btn-warning-color {
+      background-color: $btn-warning-color;
+    }
+    .btn-warning-bg {
+      background-color: $btn-warning-bg;
+    }
+    .btn-warning-border {
+      background-color: $btn-warning-border;
+    }
 
-      &.text-color-light {
-        background-color: $text-color-light;
-      }
+    .btn-danger-color {
+      background-color: $btn-danger-color;
+    }
+    .btn-danger-bg {
+      background-color: $btn-danger-bg;
+    }
+    .btn-danger-border {
+      background-color: $btn-danger-border;
+    }
 
-      &.text-color-lightest {
-        background-color: $text-color-lightest;
-      }
+    .input-bg {
+      background-color: $input-bg;
+    }
+    .input-disabled-bg {
+      background-color: $input-disabled-bg;
+    }
+    .input-color {
+      background-color: $input-color;
+    }
+    .input-border {
+      background-color: $input-border;
+    }
+    .input-border-focus {
+      background-color: $input-border-focus;
+    }
+    .input-color-placeholder {
+      background-color: $input-color-placeholder;
+    }
 
-      &.success-color {
-        background-color: $success-color;
-      }
+    .label-default-bg {
+      background-color: $label-default-bg;
+    }
+    .label-primary-bg {
+      background-color: $label-primary-bg;
+    }
+    .label-success-bg {
+      background-color: $label-success-bg;
+    }
+    .label-warning-bg {
+      background-color: $label-warning-bg;
+    }
+    .label-danger-bg {
+      background-color: $label-danger-bg;
+    }
+    .label-color {
+      background-color: $label-color;
+    }
+    .label-link-hover-color {
+      background-color: $label-link-hover-color;
+    }
 
-      &.danger-color {
-        background-color: $danger-color;
-      }
-
-      &.danger-color-light {
-        background-color: $danger-color-light;
-      }
-
-      &.danger-color-lightest {
-        background-color: $danger-color-lightest;
-      }
-
-      &.white {
-        background-color: $white;
-      }
-
-      &.black {
-        background-color: $black;
-      }
+    .vendor-facebook {
+      background-color: $vendor-facebook;
+    }
+    .vendor-google {
+      background-color: $vendor-google;
+    }
+    .vendor-github {
+      background-color: $vendor-github;
+    }
+    .vendor-twitter {
+      background-color: $vendor-twitter;
+    }
+    .vendor-dribbble {
+      background-color: $vendor-dribbble;
+    }
+    .vendor-linkedin {
+      background-color: $vendor-linkedin;
     }
   }
 }
