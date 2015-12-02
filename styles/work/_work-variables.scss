@@ -30,9 +30,9 @@ $danger-color-light  : #ed7878;
 $danger-color-lighter: #ffcce1;
 
 $gray-base   : #c3c1c1 !default;
-$gray-darkest: #545454;
-$gray-darker : #706e6e;
-$gray-dark   : #8c8b8b;
+$gray-darkest: #3e3e3e;
+$gray-darker : #545454;
+$gray-dark   : #706e6e;
 $gray        : $gray-base;
 $gray-light  : #d6d6d6;
 $gray-lighter: #f2f2f2;
@@ -72,7 +72,7 @@ $hr-color-light  : $gray-light;
 $hr-color-lighter: $gray-lighter;
 
 $link-dark-color      : $primary-color !default;
-$link-dark-hover-color: darken($primary-color, 15%) !default;
+$link-dark-hover-color: #0096ff;
 
 $link-light-color      : $gray !default;
 $link-light-hover-color: darken($link-light-color, 15%) !default;
