@@ -7,10 +7,14 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   @include font-line(36px);
+
+  color: $text-color;
 }
 
 h2 {
   @include font-line(32px);
+
+  color: $text-color;
 }
 
 h3 {
