@@ -1,11 +1,12 @@
 a.button, button {
+  @include line-height(14px);
+
   border-radius   : 6px;
   border          : 1px solid $primary-color;
   padding         : 8px 24px;
   color           : $primary-color;
   background-color: $white;
   cursor          : pointer;
-  font-size       : 14px;
   font-weight     : 700;
   text-transform  : uppercase;
   display         : inline-block;
