@@ -1,14 +1,6 @@
 .dark-bg {
   background-color: $gray-lighter;
 
-  h3, h4, h5, h6, p  {
-    color: $text-color;
-
-    &.danger {
-      color: $danger-color;
-    }
-  }
-
   hr {
     background-color: $gray-light;
   }
@@ -16,14 +8,6 @@
 
 .light-bg {
   background-color: $white;
-
-  h3, h4, h5, h6, p  {
-    color: $text-color-light;
-
-    &.danger {
-      color: $danger-color;
-    }
-  }
 
   hr {
     background-color: $gray-lighter;
