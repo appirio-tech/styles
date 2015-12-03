@@ -6,27 +6,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  @include font-line(36px);
+  font-size: 36px;
 }
 
 h2 {
-  @include font-line(32px);
+  font-size: 32px;
 }
 
 h3 {
-  @include font-line(26px);
+  font-size: 26px;
 }
 
 h4 {
-  @include font-line(24px);
+  font-size: 24px;
 }
 
 h5 {
-  @include font-line(20px);
+  font-size: 20px;
 }
 
 h6 {
-  @include font-line(18px);
+  font-size: 18px;
 }
 
 time {
