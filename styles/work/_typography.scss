@@ -62,6 +62,12 @@ p {
   }
 }
 
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
+  margin-top: 10px;
+}
+
+[15:20:29] Starting 'preprocessors'...
+
 strong {
   font-weight: 500;
 }
