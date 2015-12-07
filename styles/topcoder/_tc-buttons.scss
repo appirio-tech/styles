@@ -46,14 +46,19 @@ a.tc-btn, button.tc-btn {
   outline: none;
   text-shadow: none;
 
+  &:focus {
+    border: 1px solid $primary;
+    background-color: $primary;
+    color: $white;
+  }
+
   &:hover {
     background-color: $primary-dark;
     border-color: $primary-dark;
     color: $white;
   }
 
-  &:active,
-  &:focus {
+  &:active {
     background-color: $primary-dark;
     background-image : none;
     border-color: $primary-dark;
