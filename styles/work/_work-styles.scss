@@ -58,9 +58,11 @@ a {
 }
 
 .notification {
-  $diameter: 24px;
+  $font-size: 15px;
+  $padding  : 5px;
+  $diameter : $font-size + ($padding * 2);
 
-  padding         : 10px;
+  padding         : $padding;
   background-color: $danger-color;
   border-radius   : $diameter;
   color           : $white;
@@ -68,6 +70,7 @@ a {
   min-height      : $diameter;
   text-align      : center;
   display         : inline-block;
+  font-size       : $font-size;
 
   &.absolute {
     position: absolute;
@@ -76,7 +79,20 @@ a {
   }
 
   &.small {
-    font-size: 12px;
+    $font-size: 12px;
+    $padding  : 4px;
+    $diameter : $font-size + ($padding * 2);
+
+    padding      : $padding;
+    border-radius: $diameter;
+    min-width    : $diameter;
+    min-height   : $diameter;
+    font-size    : $font-size;
+
+    &.absolute {
+      top  : -$diameter/2;
+      right: -$diameter/2;
+    }
   }
 }
 
