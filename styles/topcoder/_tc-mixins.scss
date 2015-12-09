@@ -186,11 +186,34 @@
   }
 }
 
+// Modules
+//
+// Modules are large containers that wrap content.
+//
+// Styleguide 3.0.0
+
+// Full Width Module
+//
+// Styleguide 3.1.0
+@mixin module-full-width {
+  width: 100%;
+}
+
+// Small and Large Modules
+//
+// Styleguide 3.2.0
+
+// Small Module
+//
+// Styleguide 3.2.1
 @mixin module-s {
   margin-top: 6px;
   background-color: $white;
 }
 
+// Large Module
+//
+// Styleguide 3.2.2
 @mixin module-l {
   @include module-s;
   max-width: 1242px;
@@ -202,21 +225,21 @@
   }
 }
 
-@mixin module-full-width {
-  width: 100%;
-}
-
+// Full Width Module for Links
+//
+// Styleguide 3.3.0
 @mixin module-links {
+  @include module-full-width;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   background-color: $white;
   min-height: 72px;
   @media only screen and (min-width: 900px) {
     padding: 30px 0;
   }
 }
+
 // VIC: Left for refactoring
 @mixin form-field {
   // padding-left: 10px;
