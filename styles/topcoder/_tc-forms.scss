@@ -3,7 +3,7 @@
 // Topcoder Inputs
 
 //Empty state
-input,
+input:not([type="checkbox"]),
 textarea,
 .tc-input,
 toggle-password,
