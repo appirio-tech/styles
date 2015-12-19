@@ -12,3 +12,12 @@ a.button, button {
     text-transform  : inherit;
   }
 }
+
+// Helper classes
+.none {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+}
