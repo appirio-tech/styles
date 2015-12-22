@@ -1,5 +1,9 @@
 // TODO: Add comments to generate styleguide
 .tc-label {
+  display: block;
+  width: 100%;
+  margin-bottom: 4px;
+  padding-right: 5px;
   @include font-with-weight('Sofia Pro');
   font-size: 12px;
   color: $gray-darkest;
@@ -18,9 +22,14 @@
   }
 }
 
+// File input stylings
+// TODO: name wrapper classes
 .labelwrapper {
   width: 500px;
-  margin-bottom: 4px;
+
+  label {
+    display: inline-block;
+  }
 }
 
 .changenamelater {
@@ -43,16 +52,6 @@
   }
 }
 
-.tc-textarea__label {
-  display: block;
-  margin-bottom: 4px;
-  padding-right: 5px;
-  @include font-with-weight('Sofia Pro');
-  font-size: 12px;
-  color: $gray-darkest;
-  text-transform: uppercase;
-}
-
 .tc-textarea__char-count {
   float: right;
   @include font-with-weight('Merriweather Sans');
@@ -66,7 +65,7 @@
 }
 
 
-// 2 column form blocks with descriptions/instructions
+// Two column form blocks with descriptions/instructions
 .form-blocks {
   width: 100%;
 }
@@ -111,8 +110,28 @@
   padding-left: 60px;
 }
 
-.fieldset {
+// Fieldsets: More than one fieldset
+// Fieldset: Multiple input groups
+.fieldsets {
   width: 100%;
+
+  > .fieldset {
+    border-bottom: 1px solid $gray-light;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+}
+
+.fieldset {}
+
+.fieldset__input {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+}
+
+.fieldset__button {
+  display: block;
 }
 
 file-form-field {
@@ -128,6 +147,7 @@ textarea,
 toggle-password,
 toggle-password-with-tips  {
   height: 40px;
+  width: 100%;
   font-size: 15px;
   @include merriweather-sans-regular;
   line-height: 20px;
