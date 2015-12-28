@@ -23,8 +23,11 @@
 }
 
 // File input stylings
-// TODO: name wrapper classes
-.labelwrapper {
+.tc-file-field {
+  display: block;
+}
+
+.tc-file-field__label {
   width: 500px;
 
   label {
@@ -32,13 +35,12 @@
   }
 }
 
-.changenamelater {
-
-  input {
+.tc-file-field__inputs {
+  // Specificity to override input:not([type=checkbox])
+  input.tc-file-field__input {
     width: 500px;
   }
 }
-
 
 // Textarea with label and optional character count
 .tc-textarea {
@@ -116,6 +118,7 @@
   width: 100%;
 
   > .fieldset {
+    display: block;
     border-bottom: 1px solid $gray-light;
     margin-bottom: 20px;
     padding-bottom: 10px;
@@ -131,10 +134,6 @@
 }
 
 .fieldset__button {
-  display: block;
-}
-
-file-form-field {
   display: block;
 }
 
