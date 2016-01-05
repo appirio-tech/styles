@@ -66,6 +66,18 @@
   color: $gray-darkest;
 }
 
+// Error messages
+.tc-error-messages {
+  background-color: $error-lighter;
+  border: 1px solid $error-light;
+  color: $error;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  padding: 10px 7px;
+  text-align: left;
+}
+
 
 // Two column form blocks with descriptions/instructions
 .form-blocks {
