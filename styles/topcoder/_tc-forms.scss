@@ -173,15 +173,21 @@ toggle-password-with-tips  {
   cursor: auto;
 
   &:hover {
-    border: 1px solid #A3A3AE;
-    box-shadow: inset 0px 0px 2px 0px #B7B7B7;
+    border: 1px solid $accent-gray;
+    box-shadow: inset 0px 0px 2px 0px $gray-dark;
   }
 
   &:focus,
   &.focus {
-    border: 1px solid #0096FF;
+    border: 1px solid $primary;
     outline: none;
     box-shadow: inset 0px 0px 2px 1px rgba(133,203,255,0.4);
+  }
+
+  &:disabled {
+    border: 1px solid $gray-light;
+    background-color: $gray-lightest;
+    box-shadow: none;
   }
 
   transition: .15s all;
