@@ -37,8 +37,8 @@ a.tc-btn, button.tc-btn {
   border: 1px solid $primary;
   background-color: $primary;
   background-image : none;
-  @include sofia-pro-regular;
-  font-size: 16px;
+  @include font-with-weight('Sofia Pro', 500);
+  font-size: 12px;
   font-style: normal;
   color: $white;
   text-transform: uppercase;
