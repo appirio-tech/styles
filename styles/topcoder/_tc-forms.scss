@@ -68,13 +68,15 @@
 
 // Error messages
 .tc-error-messages {
-  background-color: $error-lighter;
-  border: 1px solid $error-light;
-  color: $error;
-  font-size: 14px;
-  line-height: 20px;
   margin-bottom: 20px;
   padding: 10px 7px;
+  border: 1px solid $error-light;
+  background-color: $error-lighter;
+  color: $error;
+  @include font-with-weight('Merriweather Sans');
+  font-style: italic;
+  font-size: 14px;
+  line-height: 20px;
   text-align: left;
 }
 
