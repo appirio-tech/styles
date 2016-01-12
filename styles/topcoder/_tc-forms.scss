@@ -36,9 +36,13 @@
 }
 
 .tc-file-field__inputs {
+  display: flex;
+  align-content: center;
+
   // Specificity to override input:not([type=checkbox])
   input.tc-file-field__input {
     width: 500px;
+    margin-right: 10px;
   }
 }
 
