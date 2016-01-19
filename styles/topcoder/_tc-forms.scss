@@ -2,7 +2,7 @@
 .tc-label {
   display: block;
   width: 100%;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
   padding-right: 5px;
   @include font-with-weight('Sofia Pro');
   font-size: 12px;
@@ -11,7 +11,9 @@
 }
 
 .tc-label__mandatory {
-  float: right;
+  position: absolute;
+  top: -20px;
+  right: 5px;
   @include font-with-weight('Sofia Pro');
   font-size: 10px;
   color: $primary;
@@ -37,12 +39,18 @@
 
 .tc-file-field__inputs {
   display: flex;
-  align-content: center;
+  flex-direction: row;
+  width: 500px;
 
-  // Specificity to override input:not([type=checkbox])
-  input.tc-file-field__input {
-    width: 500px;
+  div {
+    position: relative;
+    display: inline-block;
+    width: 100%;
     margin-right: 10px;
+  }
+
+  button {
+    flex: 1 0 auto;
   }
 }
 
@@ -100,7 +108,7 @@
 }
 
 .form-block__instructions {
-  width: 27%;
+  width: 300px;
   padding-right: 33px;
   border-right: 6px solid $gray-lighter;
 }
