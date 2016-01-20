@@ -10,18 +10,22 @@
   text-transform: uppercase;
 }
 
-.tc-label__mandatory {
+.tc-label__wrapper {
+  position: relative;
+}
+
+.tc-label__asterisk {
   position: absolute;
   top: -20px;
   right: 5px;
   @include font-with-weight('Sofia Pro');
   font-size: 10px;
-  color: $primary;
-
+  color: $error;
   // Asterisk
   span {
     font-size: 16px;
   }
+
 }
 
 // File input stylings
@@ -99,8 +103,13 @@
 }
 
 .form-block {
-  padding: 30px 0;
-  border-top: 1px solid $gray-light;
+  padding-bottom: 30px;
+  flex-direction: column;
+  @media screen and (min-width: 1000px) {
+    padding: 30px 0;
+    border-top: 1px solid $gray-light;
+    flex-direction: row;
+  }
 
   &:first-child {
     border-top: none;
@@ -108,9 +117,16 @@
 }
 
 .form-block__instructions {
-  width: 300px;
-  padding-right: 33px;
-  border-right: 6px solid $gray-lighter;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $gray-light;
+  @media screen and (min-width: 1000px) {
+    margin-bottom: 0;
+    padding-right: 33px;
+    flex: 1 0 auto;
+    max-width: 300px;
+    border-bottom: none;
+  }
 }
 
 .form-block__title {
@@ -129,29 +145,50 @@
   color: $accent-gray;
 
   p {
-    margin-bottom: 15px;
+    @media screen and (min-width: 1000px) {
+      margin-bottom: 15px;
+    }
   }
 }
 
 .form-block__fields {
-  width: 73%;
-  padding-left: 60px;
+  width: 100%;
+  border-bottom: 6px solid $gray-lighter;
+  @media screen and (min-width: 1000px) {
+    width: 73%;
+    padding-left: 60px;
+    border-bottom: none;
+    border-left: 6px solid $gray-lighter;
+  }
 }
 
 // Fieldsets: More than one fieldset
 // Fieldset: Multiple input groups
 .fieldsets {
   width: 100%;
+  padding-bottom: 20px;
+  @media screen and (min-width: 1000px) {
+    padding-bottom: 0;
+  }
 
   .fieldset {
-    display: block;
     border-bottom: 1px solid $gray-light;
     margin-bottom: 20px;
     padding-bottom: 10px;
   }
 }
 
-.fieldset {}
+.fieldset {
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  @media screen and (min-width: 1000px) {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 0;
+  }
+}
 
 .fieldset__input {
   width: 100%;
@@ -161,6 +198,9 @@
 
 .fieldset__button {
   display: block;
+  @media screen and (min-width: 1000px) {
+    margin-left: 0;
+  }
 }
 
 // Inputs before style guide
@@ -243,8 +283,6 @@ textarea {
     }
   }
 }
-
-
 
 // Compound fields, reset the input element and style the parent container to resemble input
 .topcoder-input,
