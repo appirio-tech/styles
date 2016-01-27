@@ -1,0 +1,67 @@
+.panel-page {
+  max-width: 1242px;
+  margin: 0 auto;
+  background-color: $white;
+}
+
+.panel-header {
+  width: 100%;
+  padding: 15px;
+  background-color: $gray-lightest;
+  border-bottom: 1px solid $gray-light;
+  @media screen and (min-width: 768px) {
+    padding: 30px 60px;
+  }
+}
+
+.panel-header__back-button {
+  min-width: 55px;
+  padding-right: 30px;
+  @include font-with-weight('Sofia Pro', 300);
+  font-size: 18px;
+  color: $accent-gray;
+  @media screen and (min-width: 768px) {
+    min-width: 120px;
+    padding-right: 60px;
+  }
+
+  &:hover, &:visited {
+    color: $accent-gray;
+  }
+
+  .icon-arrow {
+    width: 12px;
+    height: 22px;
+    background-image: url('/images/ico-arrow-big-left.svg');
+    background-size: 12px 22px;
+  }
+
+  p {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+}
+
+.panel-header__title {
+  @include font-with-weight('Sofia Pro', 500);
+  font-size: 18px;
+  color: $gray-darkest;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.panel-body {
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    padding: 40px 60px;
+  }
+}
+
+.panel-footer {
+  padding: 30px 60px 40px;
+  background-color: $gray-lightest;
+  border-top: 1px solid $gray-light;
+}

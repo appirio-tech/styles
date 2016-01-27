@@ -1,7 +1,10 @@
 @import 'tc-includes';
+@import 'mixins';
 @import 'reset';
-@import 'tc-buttons';
+@import 'shared';
 @import 'tc-typography';
+@import 'tc-buttons';
+@import 'tc-panels';
 @import 'tc-forms';
 @import 'tc-spinners';
 @import 'tc-lists';
@@ -19,17 +22,68 @@ body {
   min-height: 100%;
 }
 
+.flex {
+  @include display(flex);
+
+  &.column {
+    @include flex-direction(column);
+  }
+
+  &.center {
+    @include justify-content(center);
+  }
+
+  &.end {
+    @include justify-content(flex-end);
+  }
+
+  &.space-between {
+    @include justify-content(space-between);
+  }
+
+  &.space-around {
+    @include justify-content(space-around);
+  }
+
+  &.middle {
+    @include align-items(center);
+  }
+
+  &.stretch {
+    @include align-items(stretch);
+  }
+
+  &.bottom {
+    @include align-items(flex-end);
+  }
+
+  &.wrap {
+    @include flex-wrap(wrap);
+  }
+}
+
+.flex-grow {
+  @include flex-grow(1);
+}
+
+.flex-one {
+  @include flex(1);
+}
+
+.flex-shrink {
+  @include flex-shrink(1);
+  @include flex-basis(100px);
+}
+
 
 // UTILITIES
 // ----------------------------------------------------------------------------
 // margin and padding modifiers, adopted from Bootstrap
-
-$spacer:	10px !default;
-$spacer-y:	$spacer !default;
-$spacer-x:	$spacer !default;
+$spacer:  10px !default;
+$spacer-y:  $spacer !default;
+$spacer-x:  $spacer !default;
 
 // Margin
-
 .m-a-0 { margin:        0 !important; }
 .m-t-0 { margin-top:    0 !important; }
 .m-r-0 { margin-right:  0 !important; }
