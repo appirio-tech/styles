@@ -25,6 +25,11 @@ a.button, button {
     }
   }
 
+  &:disabled {
+    border-color: $grey;
+    color: $grey;
+  }
+
   &.success {
     background-color: $success-color;
     color           : $white;
