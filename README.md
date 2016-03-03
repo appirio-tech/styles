@@ -5,4 +5,4 @@
 The purpose of this repo is to share common styles, mixins, and variables.
 
 ## Releases
-Since npm does not support semvers, we use branches name accordingly, e.g. 1.x.x and 2.x.x.  Simply merge or rebase into those branches for a release.
+Create a branch and make a pull request into master. When you're ready to release, create a release with the new version number, and a Travis build will be launched automatically, which publishes the new version to npm.
