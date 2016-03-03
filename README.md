@@ -1,6 +1,5 @@
 # Appirio Styles
-Needs to be updated:
-[![Build Status](https://travis-ci.org/appirio-tech/work-styles.svg)](https://travis-ci.org/appirio-tech/work-styles)
+[![Build Status](https://travis-ci.org/appirio-tech/styles.svg?branch=master)](https://travis-ci.org/appirio-tech/styles)
 
 ## Development
 The purpose of this repo is to share common styles, mixins, and variables.
