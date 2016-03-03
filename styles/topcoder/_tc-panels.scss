@@ -32,7 +32,8 @@
   .icon-arrow {
     width: 12px;
     height: 22px;
-    background-image: url(../images/ico-arrow-big-left.svg);
+    // Should be base64, not a link
+    // background-image: url(../images/ico-arrow-big-left.svg);
     background-size: 12px 22px;
   }
 
