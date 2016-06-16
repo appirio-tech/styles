@@ -1,4 +1,4 @@
-@mixin font-with-weight($family: 'Sofia Pro', $weight: 400, $fallback: sans-serif){
+@mixin font-with-weight($family: 'Roboto', $weight: 400, $fallback: sans-serif){
   @if $fallback == serif {
     font-family: $family, $fonts-family-serif;
     font-weight: $weight;
@@ -112,38 +112,38 @@
 
 // body end;
 
-@mixin sofia-pro-extra-light {
-  font-family: 'Sofia Pro', Arial, Helvetica, sans-serif;
+@mixin roboto-extra-light {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: 200;
 }
 
-@mixin sofia-pro-light {
-  font-family: 'Sofia Pro', Arial, Helvetica, sans-serif;
+@mixin roboto-light {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: 300;
 }
 
-@mixin sofia-pro-regular {
-  font-family: 'Sofia Pro', Arial, Helvetica, sans-serif;
+@mixin roboto-regular {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
 
-@mixin sofia-pro-italic {
-  @include sofia-pro-regular;
+@mixin roboto-italic {
+  @include roboto-regular;
   font-style: italic;
 }
 
-@mixin sofia-pro-medium {
-  font-family: 'Sofia Pro', Arial, Helvetica, sans-serif;
+@mixin roboto-medium {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: 500;
 }
 
-@mixin sofia-pro-semi-bold {
-  font-family: 'Sofia Pro', Arial, Helvetica, sans-serif;
+@mixin roboto-semi-bold {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
 
-@mixin sofia-pro-bold {
-  font-family: 'Sofia Pro', Arial, Helvetica, sans-serif;
+@mixin roboto-bold {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
 

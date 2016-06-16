@@ -4,7 +4,7 @@
   width: 100%;
   margin-bottom: 5px;
   padding-right: 5px;
-  @include font-with-weight('Sofia Pro');
+  @include font-with-weight('Roboto');
   font-size: 12px;
   color: $gray-darkest;
   text-transform: uppercase;
@@ -18,7 +18,7 @@
   position: absolute;
   top: -20px;
   right: 5px;
-  @include font-with-weight('Sofia Pro');
+  @include font-with-weight('Roboto');
   font-size: 10px;
   color: $error;
   // Asterisk
@@ -131,7 +131,7 @@
 
 .form-block__title {
   margin-bottom: 14px;
-  @include font-with-weight('Sofia Pro', 500);
+  @include font-with-weight('Roboto', 500);
   font-size: 16px;
   color: $gray-darkest;
   text-transform: uppercase;
@@ -308,7 +308,7 @@ toggle-password-with-tips {
   label {
     display: inline-block;
     text-transform: uppercase;
-    @include sofia-pro-medium;
+    @include roboto-medium;
     font-size: 10px;
     line-height: 10px;
     color: $accent-gray;
@@ -332,7 +332,7 @@ toggle-password-with-tips {
     position: absolute;
     top: 14px;
     right: 10px;
-    @include sofia-pro-light;
+    @include roboto-light;
     font-size: 10px;
     line-height: 10px;
     text-transform: uppercase;

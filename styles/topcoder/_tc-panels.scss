@@ -17,7 +17,7 @@
 .panel-header__back-button {
   min-width: 55px;
   padding-right: 30px;
-  @include font-with-weight('Sofia Pro', 300);
+  @include font-with-weight('Roboto', 300);
   font-size: 18px;
   color: $accent-gray;
   @media screen and (min-width: 768px) {
@@ -46,7 +46,7 @@
 }
 
 .panel-header__title {
-  @include font-with-weight('Sofia Pro', 500);
+  @include font-with-weight('Roboto', 500);
   font-size: 18px;
   color: $gray-darkest;
   @media screen and (min-width: 768px) {
