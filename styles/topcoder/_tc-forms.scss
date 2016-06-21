@@ -209,8 +209,8 @@
 input:not([type="checkbox"]),
 textarea,
 .topcoder-input,
-toggle-password,
-toggle-password-with-tips  {
+toggle-password > input[type='password'],
+toggle-password-with-tips > input[type='password']  {
   height: 40px;
   width: 100%;
   font-size: 15px;
